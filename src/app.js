@@ -17,12 +17,12 @@ let generarExcusa = function() {
   let what = ["mi proyecto", "mi tarea", "mi maqueta", "el arroz con leche"];
   let when = ["ayer", "mañana", "en la madrugada", "anoche", "hace 2 días"];
 
-  let quien = [Math.floor(Math.random() * who.length)];
-  let accion = [Math.floor(Math.random() * action.length)];
-  let que = [Math.floor(Math.random() * what.length)];
-  let cuando = [Math.floor(Math.random() * when.length)]; //Le puse unos corchetes cuadrados que le hacian falta, y se vea igual que los demas.
+  let quienRandom = [Math.floor(Math.random() * who.length)]; //Le cambie los nombres a los arreglos, así se sabe que hacen, antes solo decía los mismos nombres pero en español.
+  let accionRandom = [Math.floor(Math.random() * action.length)];
+  let queRandom = [Math.floor(Math.random() * what.length)];
+  let cuandoRandom = [Math.floor(Math.random() * when.length)]; //Le puse unos corchetes cuadrados que le hacian falta, y se vea igual que los demas.
 
   return (
-    who[quien] + " " + action[accion] + " " + what[que] + " " + when[cuando]
+    who[quienRandom] + " " + action[accionRandom] + " " + what[queRandom] + " " + when[cuandoRandom]
   );
 };
